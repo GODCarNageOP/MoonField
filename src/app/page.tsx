@@ -1,11 +1,11 @@
-import { BentoGridThirdDemo } from "@/components/BentoGrid";
-import {Hero} from "@/components/Hero";
-import Image from "next/image";
+import { Hero } from "@/components/HeroParallax";
 
 export default function Home() {
   return (
- <div className="home h-screen">
- 
+ <div className="home h-full">
+<div className="hero py-24">
+<Hero/>
+</div>
  </div>
   );
 }

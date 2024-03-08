@@ -11,7 +11,7 @@ const Navbar = () => {
     { href: "/", label: "Home" },
     { href: "/projects", label: "Projects" },
     { href: "/aboutus", label: "About" },
-    { href: "/contactus", label: "Contact" },
+    { href: "/profile", label: "Dashboard" },
   ];
 
   return (
@@ -35,7 +35,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
-            <Link href="/">Sign in</Link>
+            <Link href="/login">Sign in</Link>
           </div>
 
           <div
