@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Heroparallax } from "./ui/hero-parallax";
+import logo from "../../public/pic.png"
 
 export function Hero() {
   return <Heroparallax products={products} />;
@@ -9,79 +10,79 @@ export const products = [
   {
     title: "Moonbeam",
     link: "https://gomoonbeam.com",
-    thumbnail: "/public/pic.png",
+    thumbnail: logo,
   },
   {
     title: "Cursor",
     link: "https://cursor.so",
-    thumbnail: "/public/pic.png",
+    thumbnail: logo,
   },
   {
     title: "Rogue",
     link: "https://userogue.com",
-    thumbnail: "/public/pic.png",
+    thumbnail: logo,
   },
 
   {
     title: "Editorially",
     link: "https://editorially.org",
-    thumbnail: "/public/pic.png",
+    thumbnail: logo,
   },
   {
     title: "Editrix AI",
     link: "https://editrix.ai",
-    thumbnail: "/public/pic.png",
+    thumbnail: logo,
   },
   {
     title: "Pixel Perfect",
     link: "https://app.pixelperfect.quest",
-    thumbnail: "/public/pic.png",
+    thumbnail: logo,
   },
 
   {
     title: "Algochurn",
     link: "https://algochurn.com",
-    thumbnail: "/public/pic.png",
+    thumbnail: logo,
   },
   {
     title: "Aceternity UI",
     link: "https://ui.aceternity.com",
-    thumbnail: "/public/pic.png",
+    thumbnail: logo,
   },
   {
     title: "Tailwind Master Kit",
     link: "https://tailwindmasterkit.com",
-    thumbnail: "/public/pic.png",
+    thumbnail: logo,
   },
   {
     title: "SmartBridge",
     link: "https://smartbridgetech.com",
-    thumbnail: "/public/pic.png",
+    thumbnail: logo,
   },
   {
     title: "Renderwork Studio",
     link: "https://renderwork.studio",
-    thumbnail: "/public/pic.png",
+    thumbnail: logo,
   },
 
   {
     title: "Creme Digital",
     link: "https://cremedigital.com",
-    thumbnail: "/public/pic.png",
+    thumbnail: logo,
   },
   {
     title: "Golden Bells Academy",
     link: "https://goldenbellsacademy.com",
-    thumbnail: "/public/pic.png",
+    thumbnail: logo,
   },
   {
     title: "Invoker Labs",
     link: "https://invoker.lol",
-    thumbnail: "/public/pic.png",
+    thumbnail: logo,
   },
   {
     title: "E Free Invoice",
     link: "https://efreeinvoice.com",
-    thumbnail: "/public/pic.png",
+    thumbnail: logo,
   },
 ];

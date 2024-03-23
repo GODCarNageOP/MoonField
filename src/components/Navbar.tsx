@@ -10,14 +10,14 @@ const Navbar = () => {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/projects", label: "Projects" },
-    { href: "/aboutus", label: "About" },
+    { href: "/leaderboard", label: "Leaderboard" },
     { href: "/profile", label: "Dashboard" },
   ];
 
   return (
     <>
-      <header className="sm:px-8 px-4 py-5 w-full fixed bg-transparent backdrop-blur-sm z-[1000]">
-        <nav className="flex justify-between items-center max-container  ">
+      <header className="sm:px-8 px-4 py-5 w-full fixed black-morphism z-[1000]">
+        <nav className="flex justify-between items-center max-container">
           <Link href="/" className="text-3xl font-bold">
             Moonfield
           </Link>
@@ -26,7 +26,7 @@ const Navbar = () => {
               <li key={item.label}>
                 <Link
                   href={item.href}
-                  className=" leading-normal text-lg  group relative dark:text-white/[0.7] dark:hover:text-white transition-colors duration-300"
+                  className="leading-normal text-lg  group relative dark:text-white/[0.7] dark:hover:text-white transition-colors duration-300"
                 >
                   {item.label}
                   <span className="absolute inset-x-0 bottom-0 h-1 dark:bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
@@ -34,8 +34,8 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
-            <Link href="/login">Sign in</Link>
+          <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24 border px-4 py-1 rounded-lg">
+            <Link href="/login">Login</Link>
           </div>
 
           <div

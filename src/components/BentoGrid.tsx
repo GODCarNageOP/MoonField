@@ -4,11 +4,10 @@ import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import {
   IconBoxAlignRightFilled,
-  IconClipboardCopy,
-  IconFileBroken,
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import { FaRegEdit } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -106,7 +105,13 @@ const SkeletonTwo = () => {
       },
     },
   };
-  const arr = new Array(6).fill(0);
+  const prof = [
+    {
+      img: "",
+      name: "",
+      desc: "",
+    }
+  ]
   return (
     <motion.div
       initial="initial"
@@ -114,15 +119,17 @@ const SkeletonTwo = () => {
       whileHover="hover"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      {arr.map((_, i) => (
+      {prof.map((_, i) => (
         <motion.div
           key={"skelenton-two" + i}
           variants={variants}
-          style={{
-            maxWidth: Math.random() * (100 - 40) + 40 + "%",
-          }}
-          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
-        ></motion.div>
+          // style={{
+          //   maxWidth: Math.random() * (100 - 40) + 40 + "%",
+          // }}
+          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-10"
+        >
+          LMAo
+        </motion.div>
       ))}
     </motion.div>
   );
@@ -187,7 +194,7 @@ const SkeletonFour = () => {
     >
       <motion.div
         variants={first}
-        className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
+        className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center shadow-card"
       >
         <Image
           src="/public/next.svg"
@@ -203,7 +210,7 @@ const SkeletonFour = () => {
           Delusional
         </p>
       </motion.div>
-      <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
+      <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center shadow-card">
         <Image
           src="/public/pic.png"
           alt="avatar"
@@ -220,7 +227,7 @@ const SkeletonFour = () => {
       </motion.div>
       <motion.div
         variants={second}
-        className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
+        className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center shadow-card"
       >
         <Image
           src="/public/pic.png"
@@ -299,7 +306,7 @@ const SkeletonFive = () => {
 };
 const items = [
   {
-    title: "AI Content Generation",
+    title: "Profile",
     description: (
       <span className="text-sm">
         Experience the power of AI in generating unique content.
@@ -307,10 +314,10 @@ const items = [
     ),
     header: <SkeletonOne />,
     className: "md:col-span-1",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    icon: <FaRegEdit className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Automated Proofreading",
+    title: "Repositories",
     description: (
       <span className="text-sm">
         Let AI handle the proofreading of your documents.
@@ -318,7 +325,7 @@ const items = [
     ),
     header: <SkeletonTwo />,
     className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    icon: <FaRegEdit className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Contextual Suggestions",

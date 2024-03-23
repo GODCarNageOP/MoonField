@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,9 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-       <html lang="en">
-      <body className={inter.className}>
-   
+      <html lang="en">
+        <body className={inter.className}>
           <div className="relative w-full">
             <Navbar />
           </div>
@@ -29,9 +27,8 @@ export default function RootLayout({
           <div className="relative footer w-full">
             <Footer />
           </div>
-    
-      </body>
-    </html>
+        </body>
+      </html>
     </html>
   );
 }

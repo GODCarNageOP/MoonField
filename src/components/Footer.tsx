@@ -7,24 +7,24 @@ import { SiDiscord } from "react-icons/si";
 import { BsTwitterX } from "react-icons/bs";
 import Link from "next/link";
 
-const SITEMAP = [
-  {
-    title: "Company",
-    links: ["About Us", "Careers", "Our Team", "Projects"],
-  },
-  {
-    title: "Help Center",
-    links: ["Discord", "Twitter", "GitHub", "Contact Us"],
-  },
-  {
-    title: "Resources",
-    links: ["Blog", "Newsletter", "Free Products", "Affiliate Program"],
-  },
-  {
-    title: "Products",
-    links: ["Templates", "UI Kits", "Icons", "Mockups"],
-  },
-];
+// const SITEMAP = [
+//   {
+//     title: "Company",
+//     links: ["About Us", "Careers", "Our Team", "Projects"],
+//   },
+//   {
+//     title: "Help Center",
+//     links: ["Discord", "Twitter", "GitHub", "Contact Us"],
+//   },
+//   {
+//     title: "Resources",
+//     links: ["Blog", "Newsletter", "Free Products", "Affiliate Program"],
+//   },
+//   {
+//     title: "Products",
+//     links: ["Templates", "UI Kits", "Icons", "Mockups"],
+//   },
+// ];
 
 const currentYear = new Date().getFullYear();
 
@@ -46,7 +46,7 @@ const Footer = () => {
                   <div key={key} color="blue-gray" className="font-normal">
                     <a
                       href="#"
-                      className="inline-block py-1 pr-2 transition-transform hover:scale-105"
+                      className="inline-block py-1 pr-2 transition-transform hover:scale-110"
                     >
                       {link}
                     </a>
@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
           ))}
         </div> */}
-        <div className="flex w-full flex-col items-center justify-center py-4 md:flex-row md:justify-between relative">
+        <div className="flex w-full flex-col items-center justify-center py-4 md:flex-row md:justify-between relative sh">
         <div className="absolute top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full blur-sm" />
         <div className="absolute top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-full" />
         <div className="absolute top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-full blur-sm" />
@@ -75,26 +75,26 @@ const Footer = () => {
               </div>
             </Link>
           </div>
-          <div className="flex gap-4 text-white sm:justify-center sm:mr-10">
+          <div className="flex gap-4 text-white sm:justify-center items-center sm:mr-10">
             <a
               href="tel:8104799731"
-              className="opacity-80 transition-opacity hover:opacity-100"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:scale-110"
             >
               <BsTwitterX size={20} />
             </a>
 
             <a
               href="mailto:1032201286@tcetmumbai.in"
-              className="opacity-80 transition-opacity hover:opacity-100"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:scale-110"
             >
-              <SiDiscord size={23} />
+              <SiDiscord size={25} />
             </a>
 
             <a
               href="https://yash-portfolio-six.vercel.app"
-              className="opacity-80 transition-opacity hover:opacity-100"
+              className="opacity-80 transition-opacity hover:opacity-100 hover:scale-110"
             >
-              <IoLogoGithub size={23} />
+              <IoLogoGithub size={25} />
             </a>
 
             {/* <Typography as="a" href="https://github.com/GODCarNageOP/Hackathon-MumbaiHacks.git" className="opacity-80 transition-opacity hover:opacity-100">
