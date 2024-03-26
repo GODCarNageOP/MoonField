@@ -3,9 +3,11 @@ import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
+import { HoverBorderGradient } from "../components/ui/hover-border-gradient";
+import { GiRapidshareArrow } from "react-icons/gi";
+import { GiReturnArrow } from "react-icons/gi";
 
 const Navbar = () => {
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navLinks = [
     { href: "/", label: "Home" },
@@ -34,8 +36,19 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24 border px-4 py-1 rounded-lg">
-            <Link href="/login">Login</Link>
+          <div className="flex gap-2 text-lg leading-normal font-medium max-lg:hidden wide:mr-24 rounded-lg cursor-pointer ">
+            <Link href="/login" className="">
+              <div className="flex justify-center text-center">
+                <HoverBorderGradient
+                  containerClassName="rounded-2xl"
+                  as="button"
+                  className="bg-black text-white flex items-center space-x-2"
+                >
+                  <span className="">Login</span>
+                  <GiRapidshareArrow className=""/>
+                </HoverBorderGradient>
+              </div>
+            </Link>
           </div>
 
           <div
