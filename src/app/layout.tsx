@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 
 const inter = Inter({ subsets: ["latin"] });
 
